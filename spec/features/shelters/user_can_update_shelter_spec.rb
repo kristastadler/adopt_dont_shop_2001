@@ -24,6 +24,11 @@ RSpec.describe "when user visits a shelter show page", type: :feature do
     fill_in 'shelter[state]', with: "New CO"
     fill_in 'shelter[zip]', with: "12345"
     click_on 'Submit'
+    expect(page).to have_content("New Longmont Animal Shelter")
+    expect(page).to have_content("123 New Address")
+    expect(page).to have_content("Hygiene")
+    expect(page).to have_content("New CO")
+    expect(page).to have_content("12345")
 
 end
 end
