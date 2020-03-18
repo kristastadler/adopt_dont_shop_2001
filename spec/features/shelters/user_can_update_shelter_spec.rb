@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "when user visits shelter index page", type: :feature do
-  it "can create new shelter" do
+RSpec.describe "when user visits a shelter show page", type: :feature do
+  it "can update the shelter" do
 
     shelter_1 = Shelter.create(name:    "Longmont Humane Society",
                                address: "9595 Nelson Road",
@@ -14,17 +14,9 @@ RSpec.describe "when user visits shelter index page", type: :feature do
                                state:   "Colorado",
                                zip:     "80301")
 
-    visit "/shelters"
+    visit "/shelters/#{shelter_1.id}"
 
-    expect(page).to have_link 'New Shelter', href: "/shelters/new"
-    click_on 'New Shelter'
-    fill_in 'shelter[name]', with: "Kalamazoo Animal Shelter"
-    fill_in 'shelter[address]', with: "1234 Main Street"
-    fill_in 'shelter[city]', with: "Kalamazoo"
-    fill_in 'shelter[state]', with: "MI"
-    fill_in 'shelter[zip]', with: "49001"
-    click_on 'Create Shelter'
-    expect(page).to have_content("Kalamazoo Animal Shelter")
+    expect(page).to have_link "Update Shelter", href: "/shelters/:id/edit"
 
-  end
+end
 end
