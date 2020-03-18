@@ -21,15 +21,15 @@ RSpec.describe "when user visits shelter index page", type: :feature do
   end
 end
 
-#RSpec.describe "when user visits new shelter page", type: :feature do
-#  it "can see a form for a new shelter" do
+RSpec.describe "when user visits new shelter page", type: :feature do
+  it "can see a form for a new shelter" do
 
-#    visit "/shelters/new"
+    visit "/shelters/new"
 
-#    expect(page).has_field? ('Name:')
-#    expect(page).has_field? ('Address:')
-#    expect(page).has_field? ('City:')
-#    expect(page).has_field? ('State:')
-#    expect(page).has_field? ('Zip:')
-#  end
-#end
+    expect(page).to have_field '#name'
+    expect(page).to have_field '#address'
+    expect(page).to have_field '#city'
+    expect(page).to have_field '#state'
+    expect(page).to have_field '#zip'
+  end
+end
