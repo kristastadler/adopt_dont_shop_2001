@@ -14,7 +14,7 @@ RSpec.describe "when user visits shelter index page", type: :feature do
                                state:   "Colorado",
                                zip:     "80301")
 
-    visit "/"
+    visit "/shelters"
 
     expect(page).to have_link 'New Shelter', href: "/shelters/new"
     click_on 'New Shelter'
