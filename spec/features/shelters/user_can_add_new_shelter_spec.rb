@@ -23,7 +23,7 @@ RSpec.describe "when user visits shelter index page", type: :feature do
     fill_in "City:", with: "Kalamazoo"
     fill_in "State:", with: "MI"
     fill_in "Zip Code:", with: "49001"
-    click_on 'Submit'
+    click_on 'Create Shelter'
   end
 end
 
