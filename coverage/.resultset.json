@@ -190,6 +190,29 @@
         1,
         null
       ],
+      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/features/shelters/user_can_see_all_shelters_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/features/shelters/user_can_see_shelter_details_spec.rb": [
         1,
         null,
@@ -237,7 +260,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -252,6 +275,6 @@
         null
       ]
     },
-    "timestamp": 1584486936
+    "timestamp": 1584502203
   }
 }
