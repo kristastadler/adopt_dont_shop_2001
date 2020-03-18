@@ -18,12 +18,14 @@ RSpec.describe "when user visits shelter index page", type: :feature do
 
     expect(page).to have_link 'New Shelter', href: "/shelters/new"
     click_on 'New Shelter'
-    fill_in "Shelter Name:", with: "Kalamazoo Animal Shelter"
-    fill_in "Street Address:", with: "1234 Main Street"
-    fill_in "City:", with: "Kalamazoo"
-    fill_in "State:", with: "MI"
-    fill_in "Zip Code:", with: "49001"
+    fill_in 'shelter[name]', with: "Kalamazoo Animal Shelter"
+    fill_in 'shelter[address]', with: "1234 Main Street"
+    fill_in 'shelter[city]', with: "Kalamazoo"
+    fill_in 'shelter[state]', with: "MI"
+    fill_in 'shelter[zip]', with: "49001"
     click_on 'Create Shelter'
+    expect(page).to have_content("Kalamazoo Animal Shelter")
+
   end
 end
 
