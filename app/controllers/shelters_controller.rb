@@ -9,6 +9,19 @@ class SheltersController < ApplicationController
   end
 
   def new
-  end 
+  end
+
+  def create
+    shelter = Shelter.new({
+      name: 'name',
+      address: 'address',
+      city: 'city',
+      state: 'state',
+      zip: 'zip'
+      })
+      shelter.save
+
+      redirect_to "/shelters"
+  end
 
 end
