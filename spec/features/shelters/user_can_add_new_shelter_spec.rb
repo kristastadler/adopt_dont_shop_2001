@@ -14,8 +14,22 @@ RSpec.describe "when user visits shelter index page", type: :feature do
                                state:   "Colorado",
                                zip:     "80301")
 
-    visit "/shelters"
+    visit "/"
 
     expect(page).to have_link 'New Shelter', href: "/shelters/new"
+    click_on 'New Shelter'
   end
 end
+
+#RSpec.describe "when user visits new shelter page", type: :feature do
+#  it "can see a form for a new shelter" do
+
+#    visit "/shelters/new"
+
+#    expect(page).has_field? ('Name:')
+#    expect(page).has_field? ('Address:')
+#    expect(page).has_field? ('City:')
+#    expect(page).has_field? ('State:')
+#    expect(page).has_field? ('Zip:')
+#  end
+#end
