@@ -16,8 +16,14 @@ RSpec.describe "when user visits a shelter show page", type: :feature do
 
     visit "/shelters/#{shelter_1.id}"
 
-    expect(page).to have_link 'Update Shelter', href: "/shelters/:id/edit"
+    expect(page).to have_link 'Update Shelter', href: "/shelters/#{shelter_1.id}/edit"
     click_on 'Update Shelter'
+    fill_in 'shelter[name]', with: "New Longmont Animal Shelter"
+    fill_in 'shelter[address]', with: "123 New Address"
+    fill_in 'shelter[city]', with: "Hygiene"
+    fill_in 'shelter[state]', with: "New CO"
+    fill_in 'shelter[zip]', with: "12345"
+    click_on 'Submit'
 
 end
 end
