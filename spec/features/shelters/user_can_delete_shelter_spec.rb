@@ -17,8 +17,7 @@ RSpec.describe "when user visits a shelter show page", type: :feature do
     visit "/shelters/#{shelter_1.id}"
 
     click_on 'Delete Shelter'
-
-
-
+    expect(page).not_to have_content("Longmont Humane Society")
+  
   end
 end
