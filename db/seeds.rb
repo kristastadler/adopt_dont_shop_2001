@@ -31,3 +31,12 @@ shelter_5 = Shelter.create(name:    "Dumb Friends League",
                           city:    "Denver",
                           state:   "Colorado",
                           zip:     "80231")
+
+pet_1 = shelter_1.pets.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT04wEEpUPJr9gf2QYqH5bFgQFRz62dfAigWbGMFBesaHYW7K06",
+                              name: "Fluffy",
+                              approximate_age: 3,
+                              sex: "Female")
+pet_2 = shelter_1.pets.create(image: "https://s3.amazonaws.com/filestore.rescuegroups.org/6685/pictures/animals/12661/12661384/70682947_500x500.jpg",
+                              name: "Titus",
+                              approximate_age: 1,
+                              sex: "Male")

@@ -364,6 +364,7 @@
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/shelter.rb": [
         1,
         1,
+        1,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/application_record.rb": [
@@ -372,6 +373,7 @@
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/pet.rb": [
+        1,
         1,
         null
       ],
@@ -442,6 +444,6 @@
         null
       ]
     },
-    "timestamp": 1584653135
+    "timestamp": 1584655270
   }
 }
