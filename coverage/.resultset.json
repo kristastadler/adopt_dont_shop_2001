@@ -191,10 +191,55 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/features/pets/user_can_see_pet_details_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/features/shelters/user_can_add_new_shelter_spec.rb": [
@@ -356,6 +401,9 @@
         2,
         2,
         2,
+        2,
+        2,
+        null,
         null,
         null,
         1,
@@ -404,6 +452,10 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        2,
         null,
         null
       ],
@@ -466,6 +518,6 @@
         null
       ]
     },
-    "timestamp": 1584657125
+    "timestamp": 1584674151
   }
 }
