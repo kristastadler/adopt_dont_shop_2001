@@ -30,7 +30,7 @@ RSpec.describe "when user visits a pet show page", type: :feature do
     fill_in 'pet[approximate_age]', with: 2
     fill_in 'pet[sex]', with: "Male"
     click_on 'Submit'
-    expect(current_path).to eql("/pets/#{pet_1.id}")
+    expect(current_path).to eq("/pets/#{pet_1.id}")
     expect(page).to have_css("img[src*='https://i.chzbgr.com/full/9059638528/hADE94BC4/fluffy-thailand-cat-cat']")
     expect(page).to have_content("Mr. Fluffy Pants")
     expect(page).to have_content("He can haz cheezburger")

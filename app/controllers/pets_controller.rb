@@ -21,7 +21,6 @@ class PetsController < ApplicationController
       sex: params[:pet][:sex],
       description: params[:pet][:description]
       })
-    pet.save
 
     redirect_to "/pets/#{pet.id}"
   end
