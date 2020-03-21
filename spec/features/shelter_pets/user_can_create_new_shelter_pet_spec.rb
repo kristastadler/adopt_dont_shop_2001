@@ -12,11 +12,11 @@ RSpec.describe "when user visits a shelter pets page", type: :feature do
 
     click_link "Create Pet"
     expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
-    fill_in 'pet[image]', with: "https://i.chzbgr.com/full/9059638528/hADE94BC4/fluffy-thailand-cat-cat"
-    fill_in 'pet[name]', with: "Mr. Fluffy Pants"
-    fill_in 'pet[description]', with: "He can haz cheezburger"
-    fill_in 'pet[approximate_age]', with: 2
-    fill_in 'pet[sex]', with: "Male"
+    fill_in :image, with: "https://i.chzbgr.com/full/9059638528/hADE94BC4/fluffy-thailand-cat-cat"
+    fill_in :name, with: "Mr. Fluffy Pants"
+    fill_in :description, with: "He can haz cheezburger"
+    fill_in :approximate_age, with: 2
+    fill_in :sex, with: "Male"
     click_button "Create Pet"
 
     new_pet = Pet.last
