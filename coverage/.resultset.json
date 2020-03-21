@@ -234,6 +234,17 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/features/pets/user_can_see_all_pets_spec.rb": [
@@ -699,7 +710,7 @@
         1,
         null,
         1,
-        5,
+        6,
         null,
         null,
         1,
@@ -740,9 +751,9 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
-        1,
+        2,
         null,
         null,
         null
@@ -776,6 +787,6 @@
         null
       ]
     },
-    "timestamp": 1584817449
+    "timestamp": 1584818060
   }
 }
