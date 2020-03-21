@@ -8,3 +8,4 @@
 <%= "Adoption Status: #{@pet.adoption_status}" %></br>
 
 <a href="/pets/<%= @pet.id %>/edit">Update Pet</a>
+<%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>

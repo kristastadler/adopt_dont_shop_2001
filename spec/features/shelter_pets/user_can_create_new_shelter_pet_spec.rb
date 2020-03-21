@@ -27,7 +27,6 @@ RSpec.describe "when user visits a shelter pets page", type: :feature do
     expect(page).to have_content(2)
     expect(page).to have_content("Male")
     expect(new_pet.shelter.name).to eq(shelter_1.name)
-
     expect(new_pet.adoption_status).to eq("Adoptable")
   end
 end

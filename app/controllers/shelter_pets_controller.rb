@@ -19,7 +19,6 @@ class ShelterPetsController < ApplicationController
       adoption_status: "Adoptable",
       description: params[:pet][:description]
       })
-    pet.save
 
     redirect_to "/shelters/#{shelter.id}/pets"
   end
