@@ -5,6 +5,7 @@
 
 <h1><a href="/pets/<%= @pet.id %>"><%= @pet.name %></a></h1>
 
+<div class="details">
 <img src="<%=@pet.image%>"></img></br>
 <%= link_to @pet.name, "/pets/#{@pet.id}" %></br>
 <%= "Description: #{@pet.description}" %></br>
@@ -14,3 +15,4 @@
 
 <a href="/pets/<%= @pet.id %>/edit">Update Pet</a>
 <%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
+</div>

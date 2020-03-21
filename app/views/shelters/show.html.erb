@@ -5,6 +5,8 @@
 
 <h1><a href="/shelters/<%= @shelter.id %>"><%= @shelter.name %></a></h1>
 
+<div class="details">
+
 <%= "Address: #{@shelter.address}" %></br>
 <%= "City: #{@shelter.city}" %></br>
 <%= "State: #{@shelter.state}" %></br>
@@ -13,6 +15,8 @@
 <a href="/shelters/<%= @shelter.id %>/pets">Shelter Pets</a> </br>
 
 <a href="/shelters/<%= @shelter.id %>/edit">Update Shelter</a>
+
+</div>
 
 <form action="/shelters/<%= @shelter.id %>" method="POST">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
