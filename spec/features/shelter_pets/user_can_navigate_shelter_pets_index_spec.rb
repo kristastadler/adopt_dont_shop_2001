@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "when user visits the pets index page", type: :feature do
-  it "can click links to edit the pets information" do
+RSpec.describe "when user visits a shelter pets index page", type: :feature do
+  it "can click links to edit or delete the pets information" do
     shelter_1 = Shelter.create(name:    "Longmont Humane Society",
                                address: "9595 Nelson Road",
                                city:    "Longmont",
@@ -24,9 +24,19 @@ RSpec.describe "when user visits the pets index page", type: :feature do
 
     expect(page).to have_link 'Edit Pet', href: "/pets/#{pet_1.id}/edit"
     expect(page).to have_link 'Edit Pet', href: "/pets/#{pet_2.id}/edit"
+    expect(page).to have_link 'Delete Pet', href: "/pets/#{pet_1.id}"
+    expect(page).to have_link 'Delete Pet', href: "/pets/#{pet_2.id}"
+
 
     click_link "Edit Pet", href: "/pets/#{pet_1.id}/edit"
-
     expect(current_path).to eq("/pets/#{pet_1.id}/edit")
+
+    visit "/shelters/#{shelter_1.id}/pets"
+
+    click_link "Delete Pet", href: "/pets/#{pet_1.id}"
+    expect(current_path).to eq("/pets")
+    expect(page).to_not have_content(pet_1.name)
+    expect(page).to have_content(pet_2.name)
+
   end
-end   
+end

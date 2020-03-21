@@ -31,6 +31,7 @@ RSpec.describe "when user visits the shelter index page", type: :feature do
     click_link "Delete Shelter", href: "/shelters/#{shelter_1.id}"
 
     expect(current_path).to eq("/shelters")
+    expect(page).to_not have_content(shelter_1.name)
     expect(page).to have_content(shelter_2.name)
     expect(page).to have_content(shelter_3.name)
 
