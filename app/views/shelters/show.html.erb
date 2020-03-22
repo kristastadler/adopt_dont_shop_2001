@@ -1,20 +1,11 @@
 <h1><a href="/shelters/<%= @shelter.id %>"><%= @shelter.name %></a></h1>
 
 <div class="details">
-
 <%= "Address: #{@shelter.address}" %></br>
 <%= "City: #{@shelter.city}" %></br>
 <%= "State: #{@shelter.state}" %></br>
 <%= "Zip Code: #{@shelter.zip}" %></br></br>
-
 <a href="/shelters/<%= @shelter.id %>/pets">Shelter Pets</a> </br>
-
-<a href="/shelters/<%= @shelter.id %>/edit">Update Shelter</a>
-
+<a href="/shelters/<%= @shelter.id %>/edit">Update Shelter</a></br>
+<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
 </div>
-
-<form action="/shelters/<%= @shelter.id %>" method="POST">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete Shelter"/>
-</form>

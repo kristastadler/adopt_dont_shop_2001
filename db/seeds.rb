@@ -26,11 +26,6 @@ shelter_4 = Shelter.create(name:    "Foothills Animal Shelter",
                           city:    "Golden",
                           state:   "Colorado",
                           zip:     "80401")
-shelter_5 = Shelter.create(name:    "Dumb Friends League",
-                          address: "2080 S Quebec St",
-                          city:    "Denver",
-                          state:   "Colorado",
-                          zip:     "80231")
 
 pet_1 = shelter_1.pets.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT04wEEpUPJr9gf2QYqH5bFgQFRz62dfAigWbGMFBesaHYW7K06",
                               name: "Fluffy",
@@ -44,3 +39,27 @@ pet_2 = shelter_1.pets.create(image: "https://s3.amazonaws.com/filestore.rescueg
                               sex: "Male",
                               adoption_status: "Pending Adoption",
                               description: "Full of energy and snuggles")
+pet_3 = shelter_2.pets.create(image: "https://images-ra.adoptapet.com/images/Homepage-DogV2.png",
+                              name: "Spot",
+                              approximate_age: 4,
+                              sex: "Male",
+                              adoption_status: "Adoptable",
+                              description: "Adorable ball of energy")
+pet_4 = shelter_3.pets.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS27BGeuhN9Ndqwqr_-qhZsGxUSnmE5yV2JO6gKxEltf5ECoZ_x",
+                              name: "Sassy",
+                              approximate_age: 7,
+                              sex: "Female",
+                              adoption_status: "Pending Adoption",
+                              description: "This fancy lady loves pets and catnip")
+pet_5 = shelter_4.pets.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTH3_0S-yff9aTBXOnGbhfc44R0XPbb7J17xEMkOPZX-ONw4yJe",
+                              name: "Albert",
+                              approximate_age: 2,
+                              sex: "Male",
+                              adoption_status: "Adoptable",
+                              description: "Albert loves going for long walks and getting belly rubs")
+pet_6 = shelter_4.pets.create(image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIOnyTQLMTr4HlLhNGxcfBQgR7ZsR6yEqok73pledKJ40EXD2U",
+                              name: "Lolita",
+                              approximate_age: 6,
+                              sex: "Female",
+                              adoption_status: "Adoptable",
+                              description: "Lolita loves adventures and flowers")                              

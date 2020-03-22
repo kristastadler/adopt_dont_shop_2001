@@ -898,31 +898,10 @@
         null,
         null
       ],
-      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/models/pet_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        null,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null
-      ],
-      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/pet.rb": [
+      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/shelter.rb": [
         1,
         1,
         1,
-        null,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/application_record.rb": [
@@ -930,28 +909,11 @@
         1,
         null
       ],
-      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/spec/models/shelter_spec.rb": [
+      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/pet.rb": [
+        1,
+        1,
         1,
         null,
-        1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null
-      ],
-      "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/models/shelter.rb": [
-        1,
-        1,
-        1,
         null
       ],
       "/Users/kristastadler/turing/2module/projects/adopt_dont_shop_2001/app/controllers/pets_controller.rb": [
@@ -1068,6 +1030,6 @@
         null
       ]
     },
-    "timestamp": 1584842342
+    "timestamp": 1584901193
   }
 }

@@ -2,12 +2,11 @@
 
 <div class="details">
 <img src="<%=@pet.image%>"></img></br>
-<%= link_to @pet.name, "/pets/#{@pet.id}" %></br>
+<p><%= link_to @pet.name, "/pets/#{@pet.id}" %> --
+<a href="/pets/<%= @pet.id %>/edit">Update Pet</a>
+<%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %></p>
 <%= "Description: #{@pet.description}" %></br>
 <%= "Approximate Age: #{@pet.approximate_age}" %></br>
 <%= "Sex: #{@pet.sex}" %></br>
 <%= "Adoption Status: #{@pet.adoption_status}" %></br>
-
-<a href="/pets/<%= @pet.id %>/edit">Update Pet</a>
-<%= link_to "Delete Pet", "/pets/#{@pet.id}", method: :delete %>
 </div>
